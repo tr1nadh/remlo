@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Remlo",
+    "description": "Remembers your login",
+    "version": "1.0",
+    "permissions": [
+        "https://accounts.google.com/*",
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://accounts.google.com/o/oauth2/v2/auth/*",
+                "https://accounts.google.com/signin/oauth/*"
+            ],
+            "js": ["jquery-3.7.1.min.js", "gAccount.js"]
+        }
+    ],
+    
+    "action": {
+      "default_popup": "",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    }
+  }
+  
