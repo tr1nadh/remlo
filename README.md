@@ -1,4 +1,4 @@
-![AgainSignIn](https://github.com/user-attachments/assets/b0a4f2ab-867a-4cc0-9b4f-789ec7cb55c2)# 📌 Remlo - Google Account Rememberer Extension
+# 📌 Remlo - Google Account Rememberer Extension
 
 **Remlo** is a Chrome extension that helps users automatically remember their previously logged-in Google accounts through Google Sign-In, making it easier to quickly sign in without needing to select the account repeatedly.
 
