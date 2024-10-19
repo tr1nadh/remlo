@@ -18,8 +18,8 @@ $(document).ready(function() {
     if (headSubText.startsWith('to continue to ')) {
         chrome.storage.local.get(headSubValue, function(result) {
             let prevEmail = result[headSubValue];
-            if (prevEmail) {
-                $('.VV3oRb ').each(function() {
+            $('.VV3oRb').each(function() {
+                if (prevEmail) {
                     let dataIdentifier = $(this).attr('data-identifier');
                     if (dataIdentifier === prevEmail) {
                         $(this).parent().prepend(`<p style="font-weight: bold; color: #000;
@@ -34,9 +34,9 @@ $(document).ready(function() {
                             'gap': '10px'
                         });
                     }
-                    $(this).parent().addClass('rm_ac_sl');
-                })
-            }
+                }
+                $(this).parent().addClass('rm_ac_sl');
+            })
         });
     }
 
